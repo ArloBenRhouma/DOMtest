@@ -1,0 +1,88 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #F2F6FF;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #cart {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .item {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #2A4365;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .item img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .item .details {
+    flex: 1;
+  }
+  
+  .item h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .item p {
+    margin: 0 0 10px;
+  }
+  
+  .item .quantity {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .item .quantity button {
+    border: none;
+    background-color: #90CDF4;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .item .quantity input {
+    text-align: center;
+    width: 50px;
+    font-size: 16px;
+  }
+  
+  .item .delete, .item .like {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: red;
+  }
+  
+  .item .delete:hover, .item .like:hover {
+    color: #E53E3E;
+  }
+  
+  .total {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .total span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D3748;
+  }
+  

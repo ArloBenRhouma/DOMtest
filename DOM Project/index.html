@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    
+    <div id="cart">
+      <!-- Item 1 -->
+      <div class="item">
+        <img src="./assets/acer.jpg" alt="Item 1">
+        <div class="details">
+          <h2>Item 1</h2>
+          <p>Price: $500.00</p>
+          <div class="quantity">
+            <button class="decrement" onclick="decrementQty(1)">-</button>
+            <input type="text" id="qty1" value="1" readonly>
+            <button class="increment" onclick="incrementQty(1)">+</button>
+          </div>
+          <button class="delete" onclick="deleteItem(1)">Delete</button>
+          <button class="like" onclick="likeItem(1)">❤️</button>
+        </div>
+      </div>
+      
+      <!-- Item 2 -->
+      <div class="item">
+        <img src="./assets/msi.jpg" alt="Item 2">
+        <div class="details">
+          <h2>Item 2</h2>
+          <p>Price: $50.00</p>
+          <div class="quantity">
+            <button class="decrement" onclick="decrementQty(2)">-</button>
+            <input type="text" id="qty2" value="1" readonly>
+            <button class="increment" onclick="incrementQty(2)">+</button>
+          </div>
+          <button class="delete" onclick="deleteItem(2)">Delete</button>
+          <button class="like" onclick="likeItem(2)">❤️</button>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="item">
+        <img src="./assets/razer.jpg" alt="Item 3">
+        <div class="details">
+          <h2>Item 3</h2>
+          <p>Price: $700.00</p>
+          <div class="quantity">
+            <button class="decrement" onclick="decrementQty(3)">-</button>
+            <input type="text" id="qty3" value="1" readonly>
+            <button class="increment" onclick="incrementQty(3)">+</button>
+          </div>
+          <button class="delete" onclick="deleteItem(3)">Delete</button>
+          <button class="like" onclick="likeItem(3)">❤️</button>
+        </div>
+      </div>
+      
+      <hr>
+      
+      <!-- Total -->
+      <div class="total">
+        <p>Total: <span id="total">$30.00</span></p>
+      </div>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
